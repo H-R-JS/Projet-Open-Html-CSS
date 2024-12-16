@@ -1,0 +1,25 @@
+body {
+  background-color: red;
+}
+
+#output {
+  background-color: green;
+  width: 200px;
+  height: 200px;
+}
+
+.span-test {
+  background-color: black;
+}
+
+.ul-list {
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+}
+
+.ul-list li {
+  background-color: yellow;
+  width: 50px;
+  height: 50px;
+}

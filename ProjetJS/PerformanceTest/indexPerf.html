@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Page pour tester les performances d'un site web."
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Performance Test</title>
+    <!-- Lien CSS externe -->
+    <link rel="stylesheet" href="stylePerf.css" />
+    <!-- JavaScript synchronisé -->
+    <script src="javaPerf.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Test de Performance</h1>
+    </header>
+    <main>
+      <!-- Image non optimisée -->
+      <img
+        src="black-wall2.webp"
+        alt="Large Example"
+        class="image"
+        loading="lazy"
+      />
+      <p>
+        Ce contenu permet de tester l'optimisation des performances d'un site
+        web.
+      </p>
+      <button id="actionButton">Cliquez-moi</button>
+    </main>
+    <footer>
+      <p>&copy; 2024 Mon Site Web</p>
+    </footer>
+  </body>
+</html>
