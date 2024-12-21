@@ -1,0 +1,56 @@
+@use "variable.scss" as var;
+
+.header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  h1 {
+    font-family: var.$font-title;
+    color: var.$color-main;
+  }
+  z-index: 1;
+}
+
+.logo {
+  width: 30px;
+  height: 70px;
+  margin: 0 10px;
+  border: 5px solid var.$color-main;
+}
+
+.menu {
+  position: absolute;
+  right: 20px;
+  font-family: var.$font-text;
+}
+
+.il-style {
+  display: inline-block;
+  position: relative;
+  padding-right: 15px;
+}
+
+.il-style::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  width: 0%;
+  height: 2px;
+  background-color: var.$color-main;
+  transition: all 0.2s;
+}
+
+.il-style:hover::after {
+  width: 80%;
+}
+
+.menu-link {
+  text-decoration: none;
+  font-size: 16px;
+  color: #111;
+}

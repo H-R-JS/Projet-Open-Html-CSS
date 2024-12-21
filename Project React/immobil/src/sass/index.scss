@@ -1,0 +1,16 @@
+@use "variable.scss" as var;
+@import "./home.scss";
+@import "./header.scss";
+@import "./rent.scss";
+@import "./box/box-immo.scss";
+@import "./box/carousel.scss";
+
+body {
+  margin: 0;
+}
+.app {
+  width: 100%;
+  height: 100%;
+  background-color: var.$color-main;
+  z-index: 2;
+}
